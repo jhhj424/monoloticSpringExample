@@ -15,8 +15,8 @@ public class WebBookChapterDto {
     private Long webBookChapterId;
     //제목
     private String name;
-//    //내용
-//    private String detail;
+    //내용
+    private String detail;
 
     private LocalDateTime createdAt;
 
@@ -28,7 +28,7 @@ public class WebBookChapterDto {
         return WebBookChapterDto.builder()
                .webBookChapterId(webBookChapter.getWebBookChapterId())
                 .name(webBookChapter.getName())
-//                .detail(webBookChapter.getDetail())
+                .detail(webBookChapter.getDetail())
                 .createdAt(webBookChapter.getCreatedAt())
                 .price(webBookChapter.getPrice())
                 .build();

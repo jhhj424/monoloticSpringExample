@@ -3,9 +3,6 @@ package com.monoloticdemo.model.dto;
 import com.monoloticdemo.model.entity.WebBook;
 import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Setter
@@ -22,8 +19,6 @@ public class WebBookDto {
     private String description;
 
     private LocalDateTime createdAt;
-
-    // 내가 봤는지?
 
     public static WebBookDto from(WebBook webBook){
         return WebBookDto.builder()
